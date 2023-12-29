@@ -26,23 +26,8 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Contacts'),
-        backgroundColor: Colors.red,
+        backgroundColor: Color.fromRGBO(27, 66, 66, 1.0),
         centerTitle: true,
-        // actions: <Widget>[
-        //   PopupMenuButton<OrderOptions>(
-        //     itemBuilder: (context) => <PopupMenuEntry<OrderOptions>>[
-        //       const PopupMenuItem<OrderOptions>(
-        //         child: Text('Sort A-Z'),
-        //         value: OrderOptions.orderaz,
-        //       ),
-        //       const PopupMenuItem<OrderOptions>(
-        //         child: Text('Sort Z-A'),
-        //         value: OrderOptions.orderza,
-        //       ),
-        //     ],
-        //     onSelected: _orderList,
-        //   ),
-        // ],
       ),
       backgroundColor: Colors.white,
       floatingActionButton: FloatingActionButton(
@@ -50,7 +35,7 @@ class _HomePageState extends State<HomePage> {
           _showContactPage();
         },
         child: Icon(Icons.add),
-        backgroundColor: Colors.red,
+        backgroundColor: Color.fromRGBO(27, 66, 66, 1.0),
       ),
       body: ListView.builder(
         padding: EdgeInsets.all(10.0),
@@ -125,7 +110,7 @@ class _HomePageState extends State<HomePage> {
                     child: TextButton(
                       child: Text(
                         'Call',
-                        style: TextStyle(color: Colors.red, fontSize: 20.0),
+                        style: TextStyle(color: Color.fromRGBO(27, 66, 66, 1.0), fontSize: 20.0),
                       ),
                       onPressed: () {
                         launch('tel: ${contacts[index].phone}');
@@ -138,7 +123,7 @@ class _HomePageState extends State<HomePage> {
                     child: TextButton(
                       child: Text(
                         'Edit',
-                        style: TextStyle(color: Colors.red, fontSize: 20.0),
+                        style: TextStyle(color: Color.fromRGBO(27, 66, 66, 1.0), fontSize: 20.0),
                       ),
                       onPressed: () {
                         Navigator.pop(context);

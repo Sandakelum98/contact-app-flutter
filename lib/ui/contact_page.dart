@@ -41,7 +41,7 @@ class _ContactPageState extends State<ContactPage> {
       child: Scaffold(
         appBar: AppBar(
           title: Text(_editedContact.name ?? 'Add Contact'),
-          backgroundColor: Colors.red,
+          backgroundColor: Color.fromRGBO(27, 66, 66, 1.0),
           centerTitle: true
         ),
         floatingActionButton: FloatingActionButton(
@@ -53,7 +53,7 @@ class _ContactPageState extends State<ContactPage> {
             }
           },
           child: Icon(Icons.add),
-          backgroundColor: Colors.red,
+          backgroundColor: Color.fromRGBO(27, 66, 66, 1.0),
         ),
         body: SingleChildScrollView(
           padding: EdgeInsets.all(10),
